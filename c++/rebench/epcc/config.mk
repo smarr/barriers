@@ -1,0 +1,4 @@
+NUM_PARTICIPANTS?=32
+SKIP_REFERENCE_TIME=1
+OPT=-O3 -no_exceptions -DNDEBUG=1
+#OPT=-g -O0 -no_exceptions -DNDEBUG=1

@@ -1,0 +1,25 @@
+#!/bin/sh
+ACTION="--pci-resume"
+
+touch tExecCnt
+CNT=`cat tExecCnt`
+let CNT=CNT+1
+
+if [[ "$CNT" = "25" ]]
+then
+	CNT=0
+	ACTION="--pci"
+fi
+echo $CNT > tExecCnt
+
+echo "Exec: $@"
+BASE_PATH=`pwd`
+tile-monitor $ACTION --hvx "cache_hash=allbutstack" \
+        --here \
+        --run \
+	--- \
+	\
+	"$@" \
+	--- \
+	--quit
+
