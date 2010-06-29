@@ -30,7 +30,7 @@ include barrier.mk
 
 EPCC        = $(addsuffix .epcc,  $(BARRIERS))
 EPCC_SIMPLE = $(addsuffix .epcc-simple,  $(BARRIERS))
-RADIX       = $(addsuffix .radix, $(BARRIERS))
+#RADIX       = $(addsuffix .radix, $(BARRIERS))
 DYNAMIC     = $(addsuffix .dynamic, $(DYNAMIC_BARRIERS))
 ABSOH       = $(addsuffix .absoh, $(BARRIERS))
 LIOH       = $(addsuffix .lioh, $(BARRIERS))

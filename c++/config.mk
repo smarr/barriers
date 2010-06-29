@@ -1,6 +1,6 @@
 SKIP_REFERENCE_TIME=1
-CXX=g++-mp-4.4
-CC=gcc-mp-4.4
+CXX=g++-mp-4.5
+CC=gcc-mp-4.5
 OPT=-g3 -O0
 #-O3
 NUM_PARTICIPANTS?=2
